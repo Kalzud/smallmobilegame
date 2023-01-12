@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FifthBlankFragment">
+
+    <ImageButton
+        android:id="@+id/goat2"
+        android:layout_width="173dp"
+        android:layout_height="133dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/goat"
+        app:layout_constraintBottom_toTopOf="@+id/pig"
+        app:layout_constraintEnd_toStartOf="@+id/dog"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageButton
+        android:id="@+id/dog"
+        android:layout_width="161dp"
+        android:layout_height="133dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dog"
+        app:layout_constraintBottom_toTopOf="@+id/frog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/goat2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageButton
+        android:id="@+id/pig"
+        android:layout_width="174dp"
+        android:layout_height="149dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/pig"
+        app:layout_constraintBottom_toTopOf="@+id/back6"
+        app:layout_constraintEnd_toStartOf="@+id/frog"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goat2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageButton
+        android:id="@+id/frog"
+        android:layout_width="170dp"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/frog"
+        app:layout_constraintBottom_toTopOf="@+id/back6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pig"
+        app:layout_constraintTop_toBottomOf="@+id/dog"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/back6"
+        android:layout_width="137dp"
+        android:layout_height="76dp"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frog"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
